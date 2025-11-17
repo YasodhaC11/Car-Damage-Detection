@@ -1,1 +1,1 @@
-# Car-Damage-Detection
+# Car-Damage-Prediction

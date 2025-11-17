@@ -1,0 +1,5 @@
+streamlit==1.49.1
+torch==2.9.0+cu126
+torchvision==0.24.0+cu126
+pillow==11.3.0
+fastapi==0.116.1
