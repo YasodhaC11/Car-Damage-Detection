@@ -1,5 +1,5 @@
 import streamlit as st
-from model_helper import predict
+from helper import predict
 
 st.title("Vehicle Damage Detection")
 
