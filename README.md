@@ -24,21 +24,6 @@ It detects the type of car damage from an uploaded image.
 
 ✅ Achieved ~80% accuracy
 
-## Project Structure
-
-**Car-Damage-Prediction/
-│
-├── streamlit_app/
-│   ├── app.py              # Streamlit UI
-│   ├── helper.py           # Model loading + prediction logic
-│   ├── model/
-│   │   └── saved_model.pth # Trained model file
-│
-├── requirements.txt
-├── README.md
-└── .gitignore
-**
-
 ## Modeling
 - **Models:** Base: ResNet50 (pretrained)
               Frozen: All layers except layer4 
