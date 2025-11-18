@@ -26,7 +26,7 @@ It detects the type of car damage from an uploaded image.
 
 ## Project Structure
 
-Car-Damage-Prediction/
+**Car-Damage-Prediction/
 │
 ├── streamlit_app/
 │   ├── app.py              # Streamlit UI
@@ -37,7 +37,7 @@ Car-Damage-Prediction/
 ├── requirements.txt
 ├── README.md
 └── .gitignore
-
+**
 
 ## Modeling
 - **Models:** Base: ResNet50 (pretrained)
