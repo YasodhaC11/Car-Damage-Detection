@@ -8,17 +8,18 @@ st.title("Vehicle Damage Detection")
 UPLOAD_DIR = "/tmp/Uploaded_images"
 os.makedirs(UPLOAD_DIR, exist_ok=True)
 
-uploaded_file = st.file_uploader("Upload an image", type=["jpg","jpeg","png"])
+uploaded_file = st.file_uploader("Upload an image", type=["jpg","jpeg","png"],accept_multiple_files=True)
 
 if uploaded_file:
     # Save image safely
+    for image_file in uploaded_files:
     image_path = os.path.join(UPLOAD_DIR, uploaded_file.name)
     with open(image_path, "wb") as f:
         f.write(uploaded_file.getbuffer())
 
     with st.container():
         # Show image
-        st.image(uploaded_file, caption="Uploaded Image", use_container_width=True)
+        st.image(image_file, caption="Uploaded Image", use_container_width=True)
 
         # Predict
         try:
