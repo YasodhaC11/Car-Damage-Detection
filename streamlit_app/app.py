@@ -1,6 +1,7 @@
 import os
 import streamlit as st
 from helper import predict
+from PIL import Image
 
 st.title("Vehicle Damage Detection")
 
@@ -13,7 +14,7 @@ uploaded_file = st.file_uploader("Upload an image", type=["jpg","jpeg","png"],ac
 if uploaded_file:
     # Save image safely
     for image_file in uploaded_files:
-    image_path = os.path.join(UPLOAD_DIR, uploaded_file.name)
+        image_path = os.path.join(UPLOAD_DIR, uploaded_file.name)
     with open(image_path, "wb") as f:
         f.write(uploaded_file.getbuffer())
 
