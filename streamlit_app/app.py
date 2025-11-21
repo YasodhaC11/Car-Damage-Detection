@@ -14,7 +14,7 @@ uploaded_file = st.file_uploader("Upload an image", type=["jpg","jpeg","png"],ac
 if uploaded_file:
     # Save image safely
     for image_file in uploaded_file:
-        image_path = os.path.join(UPLOAD_DIR, uploaded_file.name)
+        image_path = os.path.join(UPLOAD_DIR, image_file.name)
     with open(image_path, "wb") as f:
         f.write(uploaded_file.getbuffer())
 
