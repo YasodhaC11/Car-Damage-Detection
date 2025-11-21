@@ -16,7 +16,7 @@ if uploaded_file:
     for image_file in uploaded_file:
         image_path = os.path.join(UPLOAD_DIR, image_file.name)
     with open(image_path, "wb") as f:
-        f.write(uploaded_file.getbuffer())
+        f.write(image_file.getbuffer())
 
     with st.container():
         # Show image
